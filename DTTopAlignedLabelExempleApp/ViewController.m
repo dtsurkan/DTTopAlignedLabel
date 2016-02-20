@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "DTTopAlignedLabel.h"
 
 @interface ViewController ()
+
+@property (strong, nonatomic, nonnull) IBOutlet DTTopAlignedLabel *exampleLabel;
 
 @end
 
@@ -17,6 +20,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.exampleLabel.text = @"Do any additional setup after loading the view, typically from a nib.";
 }
 
 - (void)didReceiveMemoryWarning {
